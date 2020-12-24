@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+	<head>
+		<meta charset='UTF-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+		<title>Merry Christmas with audio</title>
+		<link rel='stylesheet' href='css/style.css'>
+
+		<link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1' crossorigin='anonymous'>
+		<script src='js/custom.js'></script>
+	</head>
+
+	<body>
+		<div id='visual' class='row'>
+			<div id='carousel' class='col-6 carousel slide my-auto' data-ride='carousel'>
+				<div class='carousel-inner'>
+					<ol class='carousel-indicators'>
+			            <li data-target='#carousel' data-slide-to='0' class='active'></li>
+			            <li data-target='#carousel' data-slide-to='1'></li>
+			            <li data-target='#carousel' data-slide-to='2'></li>
+			        </ol>
+
+					<div class='carousel-item active'>
+						<img class='d-block w-75' src='img/photo1.jpg' alt='First slide'>
+					</div>
+					<div class='carousel-item'>
+						<img class='d-block w-75' src='img/photo2.jpg' alt='Second slide'>
+					</div>
+					<div class='carousel-item'>
+						<img class='d-block w-75' src='img/photo3.jpg' alt='Third slide'>
+					</div>
+				</div>
+			</div>
+			
+			<div class='overlay-wrapper'>
+				<img class='mx-0 img-responsive santa' id='santa' src='img/santaclaus.png' alt='Santa Claus'/>
+			</div>
+			
+			<div class='col-6 msg'>
+				<nav class='navbar navbar-expand-lg navbar-dark'>
+					<div class='collapse navbar-nav navbar-collapse h4 d-flex justify-content-center'>
+						<a class='nav-link mx-auto active' href='#'>HOME</a>
+						<a class='nav-link mx-auto' href='#'>Browse</a>
+						<a class='nav-link mx-auto' href='#'>Library</a>
+						<a class='nav-link mx-auto' href='#'>Radio</a>
+					</div>
+				</nav>
+
+				<div class='txt'>
+					<p class='sub_title text-warning font-weight-bold font-italic'>Happy<br/>Holiday</p>
+					<p class='title text-danger font-weight-bold'>Merry<br/>Christmas</p>
+					<p class='tag text-white'><span>#christmas #holiday #holidayseason #winter</span></p>
+					<br/>
+					<a class='btn btn-outline-light' href='#'>More</a>
+				</div>
+			</div>
+		</div>
+
+<!--------------story----------------->
+		<div id='albums' class='container'>
+			<div class='row mb-4 mt-5'>
+				<div class='col text-center'>
+					<h1 class='green'>Playlist Album</h1>
+				</div>
+			</div>
+			<div class='row mb-4'>
+				<div class='col-6 album-cont'>
+					<img class='album' src='img/blue light copy.jpg' alt='First slide'>
+				</div>
+				<div class='col-6 album-cont'>
+					<img class='album' src='img/lighrbulb tree copy.jpg' alt='First slide'>
+				</div>
+			</div>
+			<div class='row mb-4'>
+				<div class='col-6 album-cont'>
+					<div class='btn-group' role='group' aria-label='Basic example'>
+						<button type='button' class='btn' onclick='rewind(0)'>
+							<img class='music-btn' src='img/backbutton.jpg' alt='Rewind'>
+						</button>
+						<button type='button' class='btn' onclick='playMusic(0)'>
+							<img class='music-btn' src='img/play.jpg' alt='Play'>
+						</button>
+						<button type='button' class='btn' onclick='forward(0)'>
+							<img class='music-btn' src='img/futurebutton.jpg' alt='Fast Forward'>
+						</button>
+					</div>
+				</div>
+				<div class='col-6 album-cont'>
+					<div class='btn-group' role='group' aria-label='Basic example'>
+						<button type='button' class='btn' onclick='rewind(1)'>
+							<img class='music-btn' src='img/backbutton.jpg' alt='Rewind'>
+						</button>
+						<button type='button' class='btn' onclick='playMusic(1)'>
+							<img class='music-btn' src='img/play.jpg' alt='Play'>
+						</button>
+						<button type='button' class='btn' onclick='forward(1)'>
+							<img class='music-btn' src='img/futurebutton.jpg' alt='Fast Forward'>
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<div class='row mb-4'>
+				<div class='col-6 album-cont'>
+					<img class='album' src='img/star on tree copy.jpg' alt='First slide'>
+				</div>
+				<div class='col-6 album-cont'>
+					<img class='album' src='img/vintage christmas copy.jpg' alt='First slide'>
+				</div>
+			</div>
+			<div class='row mb-4'>
+				<div class='col-6 album-cont'>
+					<div class='btn-group' role='group' aria-label='Basic example'>
+						<button type='button' class='btn' onclick='rewind(2)'>
+							<img class='music-btn' src='img/backbutton.jpg' alt='Rewind'>
+						</button>
+						<button type='button' class='btn' onclick='playMusic(2)'>
+							<img class='music-btn' src='img/play.jpg' alt='Play'>
+						</button>
+						<button type='button' class='btn' onclick='forward(2)'>
+							<img class='music-btn' src='img/futurebutton.jpg' alt='Fast Forward'>
+						</button>
+					</div>
+				</div>
+				<div class='col-6 album-cont'>
+					<div class='btn-group' role='group' aria-label='Basic example'>
+						<button type='button' class='btn' onclick='rewind(3)'>
+							<img class='music-btn' src='img/backbutton.jpg' alt='Rewind'>
+						</button>
+						<button type='button' class='btn' onclick='playMusic(3)'>
+							<img class='music-btn' src='img/play.jpg' alt='Play'>
+						</button>
+						<button type='button' class='btn' onclick='forward(3)'>
+							<img class='music-btn' src='img/futurebutton.jpg' alt='Fast Forward'>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src='https://code.jquery.com/jquery-3.5.1.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous'></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js' integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q' crossorigin='anonymous'></script>
+		<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js' integrity='sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI' crossorigin='anonymous'></script>
+
+		<script>
+			var input = 30.0;
+			var needle = document.getElementById('santa');
+
+			var lastAngle = '';
+			$(document).ready(function () {
+				$('.carousel').carousel({
+					interval: 3000
+				})
+
+				// Update the total angle needed
+				lastAngle = +lastAngle + + input.value;
+
+				// For testing:
+				console.clear()
+				console.log('Current total angle: ' + lastAngle);
+
+				// Move the needle:
+				needle.style.transform = 'rotate(' + lastAngle + 'deg)';
+			});
+		</script>
+
+	</body>
+</html>

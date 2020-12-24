@@ -1,0 +1,62 @@
+#visual {
+	text-align: center;
+	height: 600px;
+}
+
+.overlay-wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+}
+
+.santa {
+	width: 265px;
+	height: 377px;
+}
+
+#visual .msg {
+	background: darkgreen;
+	float: left;
+	position: relative;
+}
+
+#visual .msg >.txt {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+#visual .msg >.txt>.sub_title {
+	font: 40px 'KoreanPDSRR';
+	color: #ffb11c;
+}
+
+#visual .msg >.txt>.title {
+	font: bold 60px 'KoreanJMDBR';
+	color: white;
+}
+
+#visual .msg >.txt>.tag {
+	font: 12px 'Nanum Gothic';
+	color: white;
+}
+
+.album-cont {
+	display: block;	
+	text-align: center;
+}
+
+.album {
+	width: 40%;
+}
+
+.music-btn {
+	width: 30%;
+}

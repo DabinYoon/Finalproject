@@ -1,0 +1,80 @@
+.green {
+	color: darkgreen;
+}
+
+html, body {
+	height: 100%;
+}
+
+#visual {
+	text-align: center;
+	min-height: 100%;
+}
+
+.carousel-inner div img {
+	margin: auto;
+}
+
+.overlay-wrapper {
+    position: absolute;
+    left: 0;
+    top: 20%;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.santa {
+	width: 265px;
+	height: 377px;
+	animation: rotation 5s infinite linear;
+}
+
+@keyframes rotation {
+	70% {
+		transform: rotate(20deg);
+	}
+	40% {
+		transform: rotate(-20deg);
+	}
+}
+
+#visual .msg {
+	background: darkgreen;
+	float: left;
+	position: relative;
+}
+
+#visual .msg >.txt {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+#visual .msg >.txt>.sub_title {
+	font: 40px 'KoreanPDSRR';
+}
+
+#visual .msg >.txt>.title {
+	font: bold 60px 'KoreanJMDBR';
+}
+
+#visual .msg >.txt>.tag {
+	font: 12px 'Nanum Gothic';
+}
+
+.album-cont {
+	display: block;	
+	text-align: center;
+}
+
+.album {
+	width: 40%;
+}
+
+.music-btn {
+	width: 40px;
+}
